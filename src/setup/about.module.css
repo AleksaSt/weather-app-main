@@ -1,0 +1,204 @@
+/* Footer/About */
+
+.footerContainer{
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.footerDiv {
+  margin-top: 150px;  
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom: -10px;
+  text-decoration: underline;
+}
+
+.weatherApp {
+  text-decoration: none;
+}
+
+.weatherAppText {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.weatherAppTextTwo {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+/* Footer/About Social Media */
+
+.footerSocialMedia {
+  display: flex;
+  justify-content: center;
+}
+
+a.smFacebook, a.smTwitter, a.smYoutube, a.smInstagram, a.smLinkedin {
+  padding: 10px;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+
+.sm:hover {
+    opacity: 0.7;
+}
+
+.smFacebook {
+  background: #3B5998;
+  color: white;
+}
+
+.smTwitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.smYoutube {
+  background: #bb0000;
+  color: white;
+}
+
+.smInstagram {
+  background: #125688;
+  color: white;
+}
+
+.smLinkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.weatherAppTextThree {
+  display: flex;
+  justify-content: center;
+}
+
+.weatherImage {
+  height: 120px;
+  width: 120px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: -35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.greyLine {
+  top: 712px;
+  width: 100%;
+  height: 5px;
+  background: grey;
+  position: absolute;
+}
+
+.weatherAppTextFour {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.appImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.appImage {
+  height: 50px;
+  width: 120px;
+}
+
+.greyLineTwo {
+  top: 194px;
+  width: 100%;
+  height: 5px;
+  background: grey;
+  position: absolute;
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px){
+  a.smFacebook, a.smTwitter, a.smYoutube, a.smInstagram, a.smLinkedin {
+    padding: 8px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weatherAppTextFour {
+    margin-top: 50px;
+  }
+
+  .weatherAppTextTwo {
+    font-size: 20px;
+  }
+
+  .greyLine {
+    top: 628px;
+  }
+
+  .footerLinks {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .weatherAppText {
+    font-size: 30px;
+  }
+
+  a.smFacebook, a.smTwitter, a.smYoutube, a.smInstagram, a.smLinkedin {
+    padding: 15px;
+  }
+
+  .weatherAppTextFour {
+    margin-top: 70px;
+  }
+
+  .greyLine {
+    top: 635px;
+  }
+
+  .footerLinks {
+    font-size: 22px;
+  }
+
+  .footerLinksOne {
+    visibility: hidden;
+  }
+
+  .weatherImage {
+    margin-top: 20px;
+  }
+
+  .appImages {
+    margin-top: 40px;
+  }
+
+  .footerLinksTwo {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .footerContainer{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

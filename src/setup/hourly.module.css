@@ -1,0 +1,22 @@
+.hourlyWeatherCard {
+    top: 66px;
+    height: 110vh;
+    background-attachment: fixed;
+    background-position: sticky;
+    width: 100vw;
+    background-image: url('./assets/blue-sky-30.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+}
+
+.hourlyDateBuilder {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 27px;
+    font-family: 'Montserrat', 'Lato';
+    background-color: #f8f9fa;
+    color: black;
+    width: 100vw;
+    position: absolute;
+  }

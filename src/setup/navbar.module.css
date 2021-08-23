@@ -1,0 +1,145 @@
+/* Navbar */
+
+.weatherApp {
+  font-size: 30px;
+  color: #6495ED; 
+  font-family: 'Courier Prime', monospace;
+  text-decoration: underline;
+  text-decoration-color: #6495ED;
+  margin-left: 22.5vw;
+}
+
+/* .iconMain {
+position: relative;
+} */
+
+.icon {
+  left: 3%;
+  height: auto;
+  bottom: 8px;
+  position: absolute;
+  z-index: 10;
+}
+
+@media screen and (min-width: 300px) and (max-width: 319px){
+  .weatherApp {
+    font-size: 20px;
+    margin-left: 20vw;
+  }
+
+  .icon {
+    bottom: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+  .weatherApp {
+    font-size: 24px;
+    margin-left: 22vw;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 599px){
+  .weatherApp {
+    font-size: 28px;
+  }
+
+  .icon {
+    bottom: 10px;
+  }
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .weatherApp {
+    font-size: 33px;
+    margin-left: 32.8vw;
+  }
+
+  .icon {
+    bottom: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weatherApp {
+    font-size: 34px;
+    margin-left: 35.8vw;
+  }
+  
+  .icon {
+    left: 2%;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .weatherApp {
+    font-size: 34px;
+    margin-left: 8vw;
+  }
+
+  .nav {
+    left: 30vw;
+  }
+
+  .navMain {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .weatherApp {
+    margin-left: 7vw;
+  }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    bottom: 7.5px;
+    left: 1.5%;
+  }
+
+  .nav {
+    left: 40vw;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .weatherApp {
+    margin-left: 7vw;
+  }
+
+  .nav {
+    left: 45vw;
+  }
+
+  .icon {
+    left: 1.8%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .weatherApp {
+    margin-left: 7vw;
+  }
+
+  .nav {
+    left: 50vw;
+  }
+
+  .icon {
+    left: 1.9%;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .nav {
+    left: 55vw;
+  }
+
+  .icon {
+    left: 2%;
+  }
+}

@@ -1,0 +1,318 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+/* .time {
+  position: absolute;
+ font-size: 20px;
+} */
+
+.inputContainer {
+ display: flex;
+ justify-content: center;
+ position: relative; 
+}  
+
+input[type=text] {
+  width: 330px;
+  margin-top: 120px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+input:focus{
+  outline: none;
+  box-shadow: 0 0 3pt 2pt #ffa64d;
+}
+
+.searchIcon {
+  color: #6495ED;
+  position: absolute;
+  top: 120px;
+  right: 30px;
+}
+
+.dateBuilderWeekly {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 27px;
+  font-family: 'Montserrat', 'Lato';
+  background-color: #f8f9fa;
+  color: black;
+  width: 100%;
+  width: 100vw;
+  left: 0;
+  position: absolute;
+}
+  
+.weatherCardWeekly {
+  top: 66px;
+  background-attachment: fixed;
+  background-position: sticky;
+  width: 100vw;
+  background-image: url('./assets/blue-sky-30.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+  overflow:  scroll ;  
+}
+  
+.weatherCardDate {
+  font-size: 23px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', 'Lato';
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+}
+  
+.weatherCardDescription {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+}
+  
+.weatherCardTemperature {
+  font-size: 20px;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px darkblue;
+}
+  
+.minMaxWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 25px;
+  color: black;
+  margin-top: -107px;
+}
+  
+.lineClassMain {
+  position: absolute;
+  top: 75px;
+  width: 88.9vw;
+  height: 4px;
+  background-color: white;
+}
+  
+.lineClassOne {
+  height: 3px;
+  background-color: white;
+  width: 88.9vw;
+}
+  
+.lineClassTwo {
+  width: 53px;
+  height: 4px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+  
+.btn {
+  margin-bottom: 10px;
+}
+  
+.weatherCardWeeklyMainDetails {
+  opacity: 0.5;
+  border-radius: 25px; 
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: white;
+  padding-top: 15px; 
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 20px 0px;
+}
+  
+.weatherCardWeeklyMainDetails p:hover {
+  font-weight: bold;
+}
+  
+.weatherCardMain {
+  text-align: center;
+  font-size: 33px;
+  color: white;
+}
+  
+.weatherIconWeekly {
+  width: 80px;
+  height: 80px;
+}
+ 
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.spinner {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  z-index: 5;
+  top: 280px;
+}
+  
+@media screen and (min-width: 768px) {
+  /* .time {
+    font-size: 25px;
+    top: 10.5vh;  
+  } */
+
+  input[type=text] {
+    width: 710px;
+  }
+
+  .weatherCardDate {
+    font-size: 28px;
+  }
+
+  .weatherCardDescription {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+
+  .weatherCardTemperature {
+    font-size: 30px;
+  }
+
+  .minMaxWeather {
+    font-size: 35px;
+  }
+
+  .lineClassMain {
+    width: 94.6vw;
+  }
+
+  .lineClassOne {
+    width: 94.6vw;
+  }
+  
+  .lineClassTwo {
+    width: 78px;
+  }
+
+  .weatherCardMain {
+    font-size: 38px;
+  }
+
+  .weatherIconWeekly {
+    width: 90px;
+    height: 90px;
+  }
+
+  .weatherCardWeeklyMainDetails {
+    font-size: 22px;
+    padding-left: 90px;
+  }
+
+  .spinner {
+    height: 80px;
+    width: 80px;
+    top: 180px;
+  }
+}
+ 
+@media screen and (min-width: 1024px) {
+  input[type=text] {
+    width: 710px;
+  }
+
+  .lineClassMain {
+    width: 95.9vw;
+  }
+
+  .lineClassOne {
+    width: 95.9vw;
+  }
+
+  .weatherCardWeeklyMainDetails {
+    padding-left: 175px;
+  }
+  
+  .spinner {
+    height: 90px;
+    width: 90px;
+    top: 280px;
+  }
+}
+  
+  @media screen and (min-width: 1224px) {
+    input[type=text] {
+      width: 710px;
+    }
+  
+    .lineClassMain {
+      width: 66.6vw;
+    }
+  
+    .lineClassOne {
+      width: 66.6vw;
+    }
+  
+    .weatherCardWeeklyMainDetails {
+      padding-left: 135px;
+    }
+    
+    .spinner {
+      height: 90px;
+      width: 90px;
+      top: 280px;
+    }
+
+    .weatherCardWeekly {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70vw;
+      overflow-x:hidden;
+      overflow-y:hidden;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    
+    .lineClassMain {
+      width: 67.1vw;
+    }
+  
+    .lineClassOne {
+      width: 67.1vw;
+    }
+
+    .weatherCardWeeklyMainDetails {
+      padding-left: 174px;
+    }
+}
+
+  @media screen and (min-width: 1680px) {
+    
+    .lineClassMain {
+      width: 67.5vw;
+    }
+  
+    .lineClassOne {
+      width: 67.5vw;
+    }
+
+    .weatherCardWeeklyMainDetails {
+      padding-left: 235px;
+    }
+}
+
+@media screen and (min-width: 1880px) {
+
+  .lineClassMain {
+    width: 67.8vw;
+  }
+
+  .lineClassOne {
+    width: 67.8vw;
+  }
+
+  .weatherCardWeeklyMainDetails {
+    padding-left: 285px;
+  }
+}
+
+
+
+
+
